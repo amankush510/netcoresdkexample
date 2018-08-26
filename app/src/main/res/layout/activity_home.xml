@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="sdkdemo.netcore.com.netcoresdkdemo.HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Netcore SDK Integration Example"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#444444"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/but_clevertap"
+        android:background="#666666"
+        android:text="CleverTap Event"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/but_webengage"
+        android:background="#666666"
+        android:text="WebEngage Event"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/but_smartech"
+        android:background="#666666"
+        android:text="SmartTech Event"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

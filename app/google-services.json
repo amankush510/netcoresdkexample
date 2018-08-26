@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1076973804459",
+    "firebase_url": "https://netcoresdkdemo.firebaseio.com",
+    "project_id": "netcoresdkdemo",
+    "storage_bucket": "netcoresdkdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076973804459:android:9289235fb18624bb",
+        "android_client_info": {
+          "package_name": "sdkdemo.netcore.com.netcoresdkdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076973804459-kcu1rnjmhmplfrspqg8utj9h8inl4hfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGRGCI6H9-u8mBqYoV-bw3ojF7QKOeBQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
