@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.clevertap.android.sdk.Application;
 import com.clevertap.android.sdk.CleverTapAPI;
 import com.clevertap.android.sdk.exceptions.CleverTapMetaDataNotFoundException;
 import com.clevertap.android.sdk.exceptions.CleverTapPermissionsNotSatisfied;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Initiating Smartech SDK
+        NetcoreSDK.register(getApplication(),"2a00011f78e25f77374cc9f085d89eb4", this.getPackageName());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
@@ -63,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
         analytics = WebEngage.get().analytics();
 
 
-        //Initiating Smartech SDK
-        NetcoreSDK.register(getApplication(),"2a00011f78e25f77374cc9f085d89eb4", this.getPackageName());
+
 
     }
 
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     if(etPassword.getText() != null && etPassword.getText().toString().equalsIgnoreCase("12345678")){
                         setWebEngageuser();
                         NetcoreSDK.login(MainActivity.this, getPackageName());
+                        setSmartechProfile();
                         Intent in = new Intent(MainActivity.this, HomeActivity.class);
                         startActivity(in);
                     } else{

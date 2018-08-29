@@ -105,6 +105,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void recordSmartechEvent(){
+
         JSONObject payload = new JSONObject();
         try{
             payload.put("NAME", "CLICK");
